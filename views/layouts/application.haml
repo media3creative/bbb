@@ -1,0 +1,87 @@
+- @sitename = "Template"
+- @typekit_id = ""
+
+
+!!! 5
+%html
+  %head
+    %title= @title
+    // Buggy on the iPhone4
+    // %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0", :name => "viewport"}
+    //%link{:href => "stylesheets/stylesheet.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "stylesheets/stylesheet_good.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "stylesheets/image-slider.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "stylesheets/triple-option.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "stylesheets/profile-quickview.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+    
+    %script{:src => "http://use.typekit.com/mig2hwk.js", :type => "text/javascript"}
+    :javascript
+      try{Typekit.load();}catch(e){}
+    %script{:type => "text/javascript", :src => "javascripts/respond.min.js"}
+    %script{:type => "text/javascript", :src => "http://code.jquery.com/jquery-1.5.min.js"}
+    %script{:type => "text/javascript", :src => "javascripts/modernizr-1.6.min.js"}
+    %script{:type => "text/javascript", :src => "javascripts/application.js"}
+  %body{:class => @body_class}
+    #top-banner
+    .center-container
+      #mast-header
+        #logo1
+      #navigation
+        %ul
+          %li.home
+            = link_to "Home", "/home", :class => "home"
+          %li.about
+            %a{:href => "/about", :class => "about"} About
+            / %a{:href => "/#", :class => "dropdown"} Dropdown1
+            / %a{:href => "/#", :class => "dropdown"} Dropdown2
+          %li.services
+            = link_to "Services", "/services", :class => "services"
+          %li.gallery
+            = link_to "Gallery", "/gallery", :class => "gallery"
+          %li.contact
+            = link_to "Contact", "/contact", :class => "contact"
+      / #alt-nav
+      /   %ul
+      /     %li
+      /       = link_to "facebook", "http://www.facebook.com/", :class => "link"
+      /     %li
+      /       = link_to "twitter", "http://www.twitter.com/", :class => "link"
+      /     %li
+      /       = link_to "Log In", "/login", :class => "link"
+      .content
+        = yield
+      #footer
+        &nbsp;
+        .column
+          %h4 Group One
+          %a{:href => "#"} link
+          %a{:href => "#"} link
+          %a{:href => "#"} link
+          %a{:href => "#"} link
+        .column
+          %h4 Group Two
+          %a{:href => "#"} link
+          %a{:href => "#"} link
+          %a{:href => "#"} link
+          %a{:href => "#"} link
+        .column
+          %h4 Group Three
+          %a{:href => "#"} link
+          %a{:href => "#"} link
+          %a{:href => "#"} link
+          %a{:href => "#"} link      
+      
+    .m3c-bar
+      .copyright
+        :markdown
+          Copyright &copy; 2011-#{Time.now.year} [#{@sitename}](#). All Rights Reserved.
+      .powered-by
+        :markdown
+          Powered by [Media 3 Creative](http://media3creative.com/) ~ [M3C Pro](http://media3creative.com/pack_pro.html)
+          
+          
+          
+          
+          
+          <script type="text/javascript" src="http://use.typekit.com/mig2hwk.js"></script>
+          <script type="text/javascript">try{Typekit.load();}catch(e){}</script>

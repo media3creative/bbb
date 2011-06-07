@@ -1,0 +1,93 @@
+@import compass/utilities
+@import compass/layout
+@import compass/css3
+
+@import partials/typography
+@import partials/color
+
+.triple-option
+	margin: 0 0 60px 0
+	.left
+		.container
+			@extend .container-setup
+			//background: $accent-color url("/images/home_left.jpg") no-repeat
+	.center
+		.container
+			@extend .container-setup
+			margin: 0 29px
+			//background: $accent-color url("/images/home_center.jpg") no-repeat
+	.right
+		.container
+			@extend .container-setup
+			//background: $accent-color url("/images/home_right.jpg") no-repeat
+
+
+.container-setup
+	+box-sizing(border-box)
+	+border-radius(7px)
+	@extend .font-embed-1
+	position: relative
+	+float-left
+	width: 300px
+	height: 200px
+	//margin: 0px auto 30px auto
+	background: #efefef
+	border-bottom: 1px solid $line-color
+	border-right: 1px solid $line-color
+	h1
+		position: relative
+		top: 20px
+		left: 26px
+		color: $gray-dark
+		font-size: 24px
+		font-weight: 100
+		word-spacing: .1em
+		letter-spacing: .05em
+	h3
+		@extend .font-helvetica
+		position: relative
+		top: 10px
+		margin: 0 76px 12px 26px
+		color: $gray-dark
+		font-size: 12px
+		font-weight: 200
+		line-height: 1.3em
+		//word-spacing: .05em
+		//letter-spacing: .025em
+		//border: 1px solid #000
+	p.link
+		+box-sizing(border-box)
+		+border-radius(7px)
+		position: absolute
+		bottom: 20px
+		left: 26px
+		color: #fff
+		a
+			display: inline
+			color: $primary-color
+			font-size: 11px
+			font-weight: 200
+			text-decoration: none
+			&:hover
+				color: #aaa
+			
+		
+		
+//Inherited Formatting
+.bg-gradient
+	background: $primary-color
+	+linear-gradient(color-stops($secondary-color, $primary-color))
+	
+	
+	
+//Background Images for multiple pages - use ID names
+//HOME
+#home.left
+	.container
+		background: $accent-color url("/images/home_left.png") no-repeat
+#home.center
+	.container
+		background: $accent-color url("/images/home_center.png") no-repeat
+#home.right
+	.container
+		background: $accent-color url("/images/home_right.png") no-repeat

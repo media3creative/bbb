@@ -1,0 +1,201 @@
+.font-helvetica {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-times {
+  font-family: times, "Times New Roman", Georgia, sans-serif;
+}
+
+.font-georgia {
+  font-family: Georgia, times, "Times New Roman", sans-serif;
+}
+
+.font-typekit {
+  font-family: "atrament-web-1", "atrament-web-2", sans-serif;
+}
+
+@font-face {
+  font-family: "EmbedFont";
+  src: url("/fonts/EurostileLTStd.otf") format("opentype");
+}
+
+.font-embed-1, .double-option .left .container, .double-option .right .container {
+  font-family: "EmbedFont", Helvetica, Arial, sans-serif;
+}
+
+.double-option {
+  margin: 0 0 60px 0;
+}
+.double-option .left .container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  border-radius: 7px;
+  position: relative;
+  display: inline;
+  float: left;
+  width: 300px;
+  height: 200px;
+  background: #efefef;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+}
+.double-option .left .container h1 {
+  position: relative;
+  top: 20px;
+  left: 26px;
+  font-size: 24px;
+  font-weight: 100;
+  word-spacing: 0.1em;
+  letter-spacing: 0.05em;
+}
+.double-option .left .container h3 {
+  position: relative;
+  top: 10px;
+  margin: 0 126px 12px 26px;
+  color: #777777;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 1.3em;
+}
+.double-option .left .container p.link {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  border-radius: 7px;
+  position: absolute;
+  bottom: 20px;
+  left: 26px;
+  color: white;
+}
+.double-option .left .container p.link a {
+  display: inline;
+  color: #93101d;
+  font-size: 11px;
+  font-weight: 200;
+  text-decoration: none;
+}
+.double-option .left .container p.link a:hover {
+  color: #aaaaaa;
+}
+.double-option .right .container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: inline;
+  float: left;
+  width: 629px;
+}
+.double-option .right .container .breadcrumbs {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  border-radius: 7px;
+  width: 629px;
+  height: 30px;
+  margin: 0px 0 0 29px;
+  padding: 3px 0 0 0;
+  background: #efefef;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+}
+.double-option .right .container .breadcrumbs p {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  border-radius: 7px;
+  margin: 0px 0 0 1.3em;
+  color: #aaaaaa;
+}
+.double-option .right .container .breadcrumbs p a {
+  display: inline;
+  font-size: 11px;
+  font-weight: 200;
+  text-decoration: none;
+}
+.double-option .right .container .breadcrumbs p a:hover {
+  color: #93101d;
+}
+.double-option .right .container .content {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  border-radius: 7px;
+  position: relative;
+  top: 30px;
+  width: 629px;
+  margin: 0px 0 0 29px;
+  padding: 0;
+  border: 1px solid #990000;
+}
+.double-option .right .container .content h1 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 100;
+  word-spacing: 0.1em;
+  letter-spacing: 0.05em;
+  border: 1px solid #990000;
+}
+.double-option .right .container .content h3 {
+  position: relative;
+  top: 10px;
+  margin: 0 126px 12px 26px;
+  color: #777777;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 1.3em;
+}
+
+.bg-gradient {
+  background: #93101d;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #e72236), color-stop(100%, #93101d));
+  background-image: -moz-linear-gradient(top, #e72236 0%, #93101d 100%);
+  background-image: linear-gradient(top, #e72236 0%, #93101d 100%);
+}
+
+#prep_left .container {
+  background: #efefef url("/images/prep_left.jpg") no-repeat;
+}
+
+#prep_right .container {
+  background: #efefef url("/images/prep_right.jpg") no-repeat;
+}

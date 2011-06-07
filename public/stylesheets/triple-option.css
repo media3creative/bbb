@@ -1,0 +1,120 @@
+.font-helvetica, .container-setup h3, .triple-option .left .container h3, .triple-option .center .container h3, .triple-option .right .container h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-times {
+  font-family: times, "Times New Roman", Georgia, sans-serif;
+}
+
+.font-georgia {
+  font-family: Georgia, times, "Times New Roman", sans-serif;
+}
+
+.font-typekit {
+  font-family: "atrament-web-1", "atrament-web-2", sans-serif;
+}
+
+@font-face {
+  font-family: "EmbedFont";
+  src: url("/fonts/EurostileLTStd.otf") format("opentype");
+}
+
+.font-embed-1, .container-setup, .triple-option .left .container, .triple-option .center .container, .triple-option .right .container {
+  font-family: "EmbedFont", Helvetica, Arial, sans-serif;
+}
+
+.triple-option {
+  margin: 0 0 60px 0;
+}
+.triple-option .center .container {
+  margin: 0 29px;
+}
+
+.container-setup, .triple-option .left .container, .triple-option .center .container, .triple-option .right .container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  border-radius: 7px;
+  position: relative;
+  display: inline;
+  float: left;
+  width: 300px;
+  height: 200px;
+  background: #efefef;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+}
+.container-setup h1, .triple-option .left .container h1, .triple-option .center .container h1, .triple-option .right .container h1 {
+  position: relative;
+  top: 20px;
+  left: 26px;
+  color: #727272;
+  font-size: 24px;
+  font-weight: 100;
+  word-spacing: 0.1em;
+  letter-spacing: 0.05em;
+}
+.container-setup h3, .triple-option .left .container h3, .triple-option .center .container h3, .triple-option .right .container h3 {
+  position: relative;
+  top: 10px;
+  margin: 0 76px 12px 26px;
+  color: #727272;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 1.3em;
+}
+.container-setup p.link, .triple-option .left .container p.link, .triple-option .center .container p.link, .triple-option .right .container p.link {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  border-radius: 7px;
+  position: absolute;
+  bottom: 20px;
+  left: 26px;
+  color: white;
+}
+.container-setup p.link a, .triple-option .left .container p.link a, .triple-option .center .container p.link a, .triple-option .right .container p.link a {
+  display: inline;
+  color: #93101d;
+  font-size: 11px;
+  font-weight: 200;
+  text-decoration: none;
+}
+.container-setup p.link a:hover, .triple-option .left .container p.link a:hover, .triple-option .center .container p.link a:hover, .triple-option .right .container p.link a:hover {
+  color: #aaaaaa;
+}
+
+.bg-gradient {
+  background: #93101d;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #e72236), color-stop(100%, #93101d));
+  background-image: -moz-linear-gradient(top, #e72236 0%, #93101d 100%);
+  background-image: linear-gradient(top, #e72236 0%, #93101d 100%);
+}
+
+#home.left .container {
+  background: #efefef url("/images/home_left.png") no-repeat;
+}
+
+#home.center .container {
+  background: #efefef url("/images/home_center.png") no-repeat;
+}
+
+#home.right .container {
+  background: #efefef url("/images/home_right.png") no-repeat;
+}

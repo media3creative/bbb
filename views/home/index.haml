@@ -1,0 +1,32 @@
+- @title = "Home"
+- @body_class = "one"
+
+#home.image-slider
+  %img.accent{:src => "/images/banner-img.png"}
+  %h1 
+    Quality is our business, Service is our specialty.
+  %h3 Lorem ipsum sit dolor amet. And some other sample text to describe the background image.
+  %h3 Supplemental text.
+  %p.link
+    = link_to "Learn More", "/#" 
+
+.triple-option
+  #home.left
+    .container
+      %h1 Quality Service, Competitive Pricing
+      %h3 Lorem ipsum sit dolor amet
+      %p.link
+        = link_to "Discover Our Services  >", "/services", :class => "artist-page"
+  #home.center
+    .container
+      %h1 Nation-wide Shipping
+      %h3 Lorem ipsum sit dolor amet, soi wefobuerg bje ub aelkjbr
+      %p.link
+        = link_to "Find Your Part  >", "/parts", :class => "artist-page"
+  #home.right
+    .container
+      %h1 15% OFF
+      %h3
+        All Preventative Maintenance Services (including oil changes, transmission fluid changes, and more)
+      %p.link
+        = link_to "Details  >", "/about#special", :class => "artist-page", :target => "_blank"
