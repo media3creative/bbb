@@ -1,0 +1,209 @@
+@import compass/utilities
+@import compass/layout
+@import compass/css3
+
+@import partials/variables
+@import partials/typography
+@import partials/color
+@import partials/corners
+
+.side-right
+	+box-sizing(border-box)
+	@extend .font-embed-1
+	@extend .clearfix
+	position: relative
+	width: $inside-width
+	margin: $v-gap auto
+	padding: 0
+
+// SIDEBAR
+.right
+	+box-sizing(border-box)
+	+border-radius($corner-radius)
+	@extend .font-embed-1
+	@extend .clearfix
+	@extend .bg-gradient-gray-dark
+	position: relative
+	+float-left
+	width: (($inside-width - ($h-gap*2))/3)
+	//height: $option-height
+	margin: 0 0 $v-gap $h-gap
+	//background: $option-bg
+	border-bottom: 1px solid $option-border
+	border-right: 1px solid $option-border
+	h1
+		+box-sizing(border-box)
+		@extend .corner-top
+		position: relative
+		color: $option-title
+		background: $option-title-bg
+		margin: 0 0 ($v-gap / 2) 0
+		padding: 1em 0 1em 10%
+		font-size: 18px
+		font-weight: 100
+		text-transform: uppercase
+		text-align: left
+	.link
+		@extend .clearfix
+		@extend .font-trebuchet
+		+box-sizing(border-box)
+		position: relative
+		width: ($option-width - ($h-gap *2))
+		margin: 0 auto
+		padding: 0.5em 0
+		font-size: 11px
+		border-bottom: 1px dotted $line-color
+		&:last-child
+			border-bottom: none
+			margin-bottom: ($v-gap / 2)
+		h5
+			display: block
+			position: relative
+			+float-left
+			clear: left
+			top: 3px
+			width: 10px
+			height: 10px
+			color: #fff
+			background: $secondary
+			font-size: 11px
+			text-align: center
+		p
+			+box-sizing(border-box)
+			display: block
+			+float-left
+			clear: right
+			width: 200px
+			margin: 0
+			padding: 0 0 0 1.5em
+			font-size: 12px
+			a
+				color: $option-link
+				&:hover
+					color: $secondary
+					text-decoration: none
+	.paragraph
+		@extend .clearfix
+		@extend .font-trebuchet
+		+box-sizing(border-box)
+		position: relative
+		width: ($option-width - ($h-gap *2))
+		margin: 0 auto
+		padding: 0.5em 0
+		font-size: 12px
+		p
+			+box-sizing(border-box)
+			+float-left
+			clear: right
+			margin: 0 0 $v-gap 0
+			color: $option-title
+			font-size: 12px
+			line-height: 24px
+			a
+				color: $option-link
+				&:hover
+					color: $secondary
+					text-decoration: none
+
+// CONTENT
+.left
+	@extend .section
+	+box-sizing(border-box)
+	@extend .font-helvetica
+	position: relative
+	+float-left
+	width: $content-width
+	.content
+		+box-sizing(border-box)
+		position: relative
+		width: 100%
+		.section
+			+box-sizing(border-box)
+			@extend .clearfix
+			position: relative
+			padding: 0 0 ($v-gap) 0
+			border-bottom: 1px dotted $section-border
+			&:last-child
+				padding-bottom: 0
+				border-bottom: none
+			img
+				+box-sizing(border-box)
+				@extend .corner-all
+				@extend .bg-gradient-primary
+				+float-left
+				clear: left
+				width: $content-img-w
+				height: $home-img-h
+				margin: 0 ($h-gap / 2) ($v-gap / 2) 0
+			h1
+				@extend .font-embed-1
+				+box-sizing(border-box)
+				width: ($content-width - ($content-img-w + ($h-gap / 2)))
+				margin: $corner-radius 0 ($v-gap/3) ($content-img-w + ($h-gap / 2))
+				padding: 0 3em 0.5em $corner-radius
+				color: $section-headers !important
+				font-size: 18px
+				font-weight: 100
+				text-transform: uppercase
+				word-spacing: .1em
+				letter-spacing: .05em
+				border-bottom: 1px solid $section-lines
+			p
+				@extend .font-trebuchet
+				position: relative
+				margin: 0 0 ($v-gap * 0.75) 0
+				padding: 0 0 0 $corner-radius
+				color: $section-text
+				font-size: 12px
+				font-weight: 200
+				text-align: justify
+				line-height: 1.7em
+				&:last-child
+					margin-bottom: 0
+				a
+					color: $primary-light
+					text-decoration: none
+					&:hover
+						color: $primary
+			p.bold
+				@extend .font-trebuchet
+				position: relative
+				margin: 0
+				padding: 0 0 0 $corner-radius
+				color: #000
+				font-size: 12px
+				font-weight: bold
+				line-height: 1.7em
+
+.spacer
+	@extend .clearfix
+	margin-bottom: ($v-gap)
+
+	
+.contact-form
+	overflow: hidden
+	iframe
+		position: relative
+		top: -30px
+
+
+.clearfix
+	&:before
+		content: "\0020"
+		display: block
+		height: 0
+		overflow: hidden
+	&:after
+		content: "\0020"
+		display: block
+		height: 0
+		overflow: hidden
+		clear: both
+	zoom: 1
+						
+		
+//Inherited Formatting
+	
+	
+	
+//Background Images for multiple pages - use ID names

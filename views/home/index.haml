@@ -1,32 +1,50 @@
-- @title = "Home"
+- @title = " | Home"
+- @subtitle = ""
 - @body_class = "one"
 
-#home.image-slider
-  %img.accent{:src => "/images/banner-img.png"}
-  %h1 
-    Quality is our business, Service is our specialty.
-  %h3 Lorem ipsum sit dolor amet. And some other sample text to describe the background image.
-  %h3 Supplemental text.
-  %p.link
-    = link_to "Learn More", "/#" 
+%link{:href => "stylesheets/body-1.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
 
-.triple-option
-  #home.left
-    .container
-      %h1 Quality Service, Competitive Pricing
-      %h3 Lorem ipsum sit dolor amet
-      %p.link
-        = link_to "Discover Our Services  >", "/services", :class => "artist-page"
-  #home.center
-    .container
-      %h1 Nation-wide Shipping
-      %h3 Lorem ipsum sit dolor amet, soi wefobuerg bje ub aelkjbr
-      %p.link
-        = link_to "Find Your Part  >", "/parts", :class => "artist-page"
-  #home.right
-    .container
-      %h1 15% OFF
-      %h3
-        All Preventative Maintenance Services (including oil changes, transmission fluid changes, and more)
-      %p.link
-        = link_to "Details  >", "/about#special", :class => "artist-page", :target => "_blank"
+#one.image-slider
+  .center
+    #slider-wrapper
+      #slider.nivoSlider
+        %img{:alt => "", :src => "/images/nivo/banner-1-1.jpg", :title => "#caption1"}/
+        %img{:alt => "", :src => "/images/nivo/banner-1-2.jpg", :title => "#caption2"}/
+        %img{:alt => "", :src => "/images/nivo/banner-1-2.jpg", :title => "#caption3"}/
+      #caption1.nivo-html-caption
+        %h1 Slide 1: A clever title.
+        %h3 This is the first impact image the user will see. A brief description of the slide is included to inform the user.
+        %p.link
+          = link_to "Learn More", "/about"
+      #caption2.nivo-html-caption
+        %h1 Slide 2: Spark an interest.
+        %h3 This slide will feature a product or service that really gets the user interested in the company. Supplemental text prompts the user to act, such as purchasing or reading more.
+        %p.link
+          = link_to "Buy Now", "/services"
+      #caption3.nivo-html-caption
+        %h1
+          Slide 3: Example of a
+          %br/
+          multi-line descriptive headline
+        %h3 The third slide is much like the second&mdash;it showcases a special aspect of the company. Additional slides may be added.
+        %p.link
+          = link_to "Learn How", "/contact" 
+
+.body
+  .center
+    .content
+      #one.left
+        %a.container{:href => "/about"}
+          %h1 About Us
+          %h3 Interest-grabber that talks about the company
+          %p.link Learn More  >
+      #one.middle
+        %a.container{:href => "/services"}
+          %h1 Featured Service
+          %h3 Highlights a key product or service
+          %p.link Discover  >
+      #one.right
+        %a.container{:href => "/gallery"}
+          %h1 Sample Gallery
+          %h3 View photos of our products and services
+          %p.link Get Started  >

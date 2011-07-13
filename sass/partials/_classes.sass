@@ -1,0 +1,46 @@
+@import partials/variables
+@import partials/typography
+@import partials/color
+@import partials/corners
+
+.clearfix
+	&:before
+		content: "\0020"
+		display: block
+		height: 0
+		overflow: hidden
+	&:after
+		content: "\0020"
+		display: block
+		height: 0
+		overflow: hidden
+		clear: both
+	zoom: 1
+
+.center-container
+	@extend .box
+	position: relative
+	width: $center-width
+	height: 100%
+	margin: 0 auto
+	padding: 0
+	background: $center-container-bg
+
+.box
+	+box-sizing(border-box)
+	
+.opaque
+	opacity: ($opacity)
+	filter: alpha(opacity=$opacity-pc)
+	
+	
+
+	
+//	Inherited Formatting
+p
+	font-size: inherit
+	color: inherit
+
+b
+	color: $text-dark !important
+	font-weight: bold

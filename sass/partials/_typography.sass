@@ -1,23 +1,34 @@
 // Common font stacks
 .font-helvetica
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
 
 .font-arial
-  font-family: Arial, Helvetica, sans-serif
+	font-family: Arial, Helvetica, sans-serif
 
 .font-times
-  font-family: times, "Times New Roman", Georgia, sans-serif
+	font-family: times, "Times New Roman", Georgia, sans-serif
 
 .font-georgia
-  font-family: Georgia, times, "Times New Roman", sans-serif
+	font-family: Georgia, times, "Times New Roman", sans-serif
+
+.font-trebuchet
+	font-family: "Trebuchet MS",	"Trebuchet", "Times New Roman"
 
 // Project level font stacks
-.font-typekit
-  font-family: "atrament-web-1","atrament-web-2", sans-serif
-
 @font-face
-  font-family: "EmbedFont"
-  src: url("/fonts/EurostileLTStd.otf") format("opentype")
+	font-family: "EmbedFont"
+	src: url("/fonts/EurostileLTStd.otf") format("OpenType")
 
 .font-embed-1
-  font-family: "EmbedFont", Helvetica, Arial, sans-serif
+	font-family: "EmbedFont"
+
+
+
+
+
+
+
+
+// Use this class to easily change the base font across all stylesheets
+.font-base
+	@extend .font-trebuchet

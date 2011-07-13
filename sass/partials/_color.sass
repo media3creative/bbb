@@ -1,27 +1,123 @@
-$primary-color: #93101d
-$secondary-color: lighten(adjust-hue($primary-color, 0%), +20)
+@import compass/utilities
+@import compass/layout
+@import compass/css3
 
-$accent-color: #efefef
-$line-color: #dadada
+// COLOR DEFINITIONS
+$primary: #003461
+$primary-light: lighten(adjust-hue($primary, 0%), +20)
+//$primary-light: #0a65b4
+$primary-dark: darken($primary, +5)
+$secondary: #d8a41c
+//$secondary-light: lighten(adjust-hue($secondary, 0%), +10)
+$secondary-light: #ebd716
+$secondary-dark: darken($secondary, +5)
+$accent: #900
 
-$gray-dark: #727272
-//$gray-med: #000
-//$gray-light: #000
+$line-color: #ddd
 
-$image-slider-bg: $accent-color
+$gray-dark: #333
+$gray-med: #666
+$gray-light: #efefef
 
-$nav_hover_bg_color: #fff
-$nav_hover_bg_opacity: .9
 
-$content_container_bg_color: $nav_hover_bg_color //#d3313a
-$content_container_bg_opacity: .5
+// COLOR APPLICATION
+$html-bg:									#efefef
+$body-bg:									$html-bg
+$center-container-bg:			#fff
 
-$container-height: 100%
+$text-dark:								#000
+$text-light:							$gray-med
 
-$scrollbar-width: 8px
-$scrollbar-handle-color: #656565
-$scrollbar-handle-up-color: #ddd
-$scrollbar-handle-up-hover-color: #555
+$header-title:						#fff
+$header-text:							#fff
+$header-link:							$secondary
+$header-link-hover:				#000
+$header-border:						$gray-med
 
-$scrollbar-handle-down-color: $scrollbar-handle-up-color
-$scrollbar-handle-down-hover-color: $scrollbar-handle-up-hover-color
+$nav-text:								$gray-med
+$nav-text-hover:					#fff
+$nav-lines:								$primary-dark
+$nav-bg:									transparent
+$nav-dropdown-text:				$gray-med
+$nav-dropdown-hover:			#fff
+$nav-dropdown-bg:					$primary-dark
+$nav-dropdown-bg-hover:		$primary-light
+$nav-dropdown-border:			$gray-dark
+$nav-dropdown-accent:			$secondary
+
+$image-slider-bg:					$gray-light
+$image-slider-title:			$primary-light
+$image-slider-text: 			$gray-dark
+$image-slider-link:				#fff
+$image-slider-link-hover:	#fff
+$image-slider-border:			$line-color
+
+$section-title:						$primary-light
+$section-text:						$text-light
+$section-lines:						$gray-light
+$section-border:					$secondary
+
+$option-title:						$primary-light
+$option-title-bg:					transparent
+$option-text:							$gray-med
+$option-link:							$secondary
+$option-link-hover:				$secondary
+$option-bg:								$gray-light
+$option-border:						$line-color
+
+$footer-title:						$gray-med
+$footer-text:							$gray-med
+$footer-link:							$gray-med
+$footer-link-hover:				$primary-light
+$footer-border:						$line-color
+
+$m3c-bg:									$secondary
+$m3c-border:							$secondary-dark
+$m3c-text:								$gray-light
+$m3c-link:								$primary
+$m3c-link-hover:					#fff
+$m3c-link-border:					$line-color
+
+$opacity:									0.75
+$opacity-pc:							($opacity*100)			// DO NOT CHANGE, IS UPDATED BY LINE ABOVE
+
+
+
+
+// GRADIENTS
+.bg-gradient-primary
+	background: $primary
+	+linear-gradient(color-stops($primary-light, $primary))	
+
+.bg-gradient-reverse
+	background: $primary
+	+linear-gradient(color-stops((lighten($primary-light, 5%)), (lighten($primary, 5%))))
+
+.bg-gradient-dark
+	background: $primary
+	+linear-gradient(color-stops((darken($primary-light, 5%)), (darken($primary, 5%))))
+
+.bg-gradient-left
+	background: $primary
+	+linear-gradient(color-stops($primary, $primary-light), left)
+
+.bg-gradient-secondary
+	background: $secondary
+	+linear-gradient(color-stops($secondary, $secondary-light))
+
+.bg-gradient-secondary-light
+	background: $primary
+	+linear-gradient(color-stops((lighten($secondary, 5%)), (lighten($secondary-light, 5%))))
+
+.bg-gradient-secondary-reverse
+	background: $secondary
+	+linear-gradient(color-stops($secondary-light, $secondary))
+	
+.bg-gradient-gray-light
+	background: $gray-light
+	+linear-gradient(color-stops($gray-light, #fff))
+
+.bg-gradient-gray-dark
+	background: $gray-med
+	+linear-gradient(color-stops($gray-med, $gray-dark))
+
