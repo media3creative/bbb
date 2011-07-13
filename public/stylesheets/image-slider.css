@@ -117,6 +117,14 @@
   background-image: linear-gradient(top, #666666, #333333);
 }
 
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
+  background: #b4d5ff;
+}
+
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
+  background: #b4d5ff;
+}
+
 .corner-top-left {
   -moz-border-radius-topleft: 6px;
   -khtml-border-radius-topleft: 6px;
@@ -222,6 +230,15 @@
 .opaque {
   opacity: 0.75;
   filter: alpha(opacity=75);
+}
+
+.contact-form {
+  overflow: hidden;
+  margin-bottom: -23px;
+}
+.contact-form iframe {
+  position: relative;
+  top: -38px;
 }
 
 p {
@@ -351,6 +368,14 @@ b {
   background-image: -o-linear-gradient(top, #666666, #333333);
   background-image: -ms-linear-gradient(top, #666666, #333333);
   background-image: linear-gradient(top, #666666, #333333);
+}
+
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
+  background: #b4d5ff;
+}
+
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
+  background: #b4d5ff;
 }
 
 .corner-top-left {

@@ -12,6 +12,7 @@ $secondary: #d8a41c
 $secondary-light: #ebd716
 $secondary-dark: darken($secondary, +5)
 $accent: #900
+$apple-highlight:	#b4d5ff
 
 $line-color: #ddd
 
@@ -27,6 +28,7 @@ $center-container-bg:			#fff
 
 $text-dark:								#000
 $text-light:							$gray-med
+$text-highlight:					$apple-highlight
 
 $header-title:						#fff
 $header-text:							#fff
@@ -121,3 +123,9 @@ $opacity-pc:							($opacity*100)			// DO NOT CHANGE, IS UPDATED BY LINE ABOVE
 	background: $gray-med
 	+linear-gradient(color-stops($gray-med, $gray-dark))
 
+
+// CURSOR HIGHLIGHTING
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection
+	background: $text-highlight
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection
+	background: $text-highlight
