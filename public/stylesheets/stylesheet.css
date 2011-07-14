@@ -58,15 +58,6 @@ table {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-@font-face {
-  font-family: "EmbedFont";
-  src: url("/fonts/EurostileLTStd.otf") format("OpenType");
-}
-
-.font-embed-1 {
-  font-family: "EmbedFont";
-}
-
 .bg-gradient-primary {
   background: #003461;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #006bc7), color-stop(100%, #003461));
@@ -324,15 +315,6 @@ select, input, textarea {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-@font-face {
-  font-family: "EmbedFont";
-  src: url("/fonts/EurostileLTStd.otf") format("OpenType");
-}
-
-.font-embed-1 {
-  font-family: "EmbedFont";
-}
-
 .bg-gradient-primary {
   background: #003461;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #006bc7), color-stop(100%, #003461));
@@ -575,15 +557,6 @@ b {
 
 .font-trebuchet, .font-base {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
-}
-
-@font-face {
-  font-family: "EmbedFont";
-  src: url("/fonts/EurostileLTStd.otf") format("OpenType");
-}
-
-.font-embed-1 {
-  font-family: "EmbedFont";
 }
 
 .bg-gradient-primary {

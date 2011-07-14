@@ -18,15 +18,6 @@
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-@font-face {
-  font-family: "EmbedFont";
-  src: url("/fonts/EurostileLTStd.otf") format("OpenType");
-}
-
-.font-embed-1, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1 {
-  font-family: "EmbedFont";
-}
-
 .bg-gradient-primary {
   background: #003461;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #006bc7), color-stop(100%, #003461));
@@ -271,15 +262,6 @@ b {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-@font-face {
-  font-family: "EmbedFont";
-  src: url("/fonts/EurostileLTStd.otf") format("OpenType");
-}
-
-.font-embed-1, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1 {
-  font-family: "EmbedFont";
-}
-
 .bg-gradient-primary {
   background: #003461;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #006bc7), color-stop(100%, #003461));
@@ -482,6 +464,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   z-index: 20;
 }
 .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1 {
+  font-family: "EmbedFont-1";
   position: absolute;
   top: 22.5px;
   left: 22.5px;

@@ -1,5 +1,5 @@
 .font-helvetica {
-  font-family: "Helvetica Neue UltraLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .font-arial {
@@ -14,17 +14,8 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet {
+.font-trebuchet, .font-base {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
-}
-
-@font-face {
-  font-family: "EmbedFont";
-  src: url("/fonts/EurostileLTStd.otf") format("OpenType");
-}
-
-.font-embed-1, ul#topnav {
-  font-family: "EmbedFont";
 }
 
 .bg-gradient-primary, #header, .center {
@@ -115,6 +106,14 @@
   background-image: -o-linear-gradient(top, #666666, #333333);
   background-image: -ms-linear-gradient(top, #666666, #333333);
   background-image: linear-gradient(top, #666666, #333333);
+}
+
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
+  background: #b4d5ff;
+}
+
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
+  background: #b4d5ff;
 }
 
 .corner-top-left {
@@ -224,8 +223,27 @@
   filter: alpha(opacity=75);
 }
 
+.contact-form {
+  overflow: hidden;
+  margin-bottom: -23px;
+}
+.contact-form iframe {
+  position: relative;
+  top: -38px;
+}
+
+p {
+  font-size: inherit;
+  color: inherit;
+}
+
+b {
+  color: black !important;
+  font-weight: bold;
+}
+
 .font-helvetica {
-  font-family: "Helvetica Neue UltraLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .font-arial {
@@ -240,17 +258,8 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet {
+.font-trebuchet, .font-base {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
-}
-
-@font-face {
-  font-family: "EmbedFont";
-  src: url("/fonts/EurostileLTStd.otf") format("OpenType");
-}
-
-.font-embed-1, ul#topnav {
-  font-family: "EmbedFont";
 }
 
 .bg-gradient-primary, #header, .center {
@@ -341,6 +350,14 @@
   background-image: -o-linear-gradient(top, #666666, #333333);
   background-image: -ms-linear-gradient(top, #666666, #333333);
   background-image: linear-gradient(top, #666666, #333333);
+}
+
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
+  background: #b4d5ff;
+}
+
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, b::-moz-selection, a::-moz-selection {
+  background: #b4d5ff;
 }
 
 .corner-top-left {
@@ -441,6 +458,7 @@
 }
 
 ul#topnav {
+  font-family: "EmbedFont-1";
   display: inline;
   float: right;
   margin: 20px 30px 0 200px;
