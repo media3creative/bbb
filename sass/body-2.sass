@@ -54,10 +54,16 @@
 	@extend .box
 	@extend .clearfix
 	position: relative
-	+float-left
 	clear: none
 	width: $sidebar-width
+	
+.sidebar.left
+	+float-left
 	margin: 0 $h-gap $v-gap 0
+
+.sidebar.right
+	+float-right
+	margin: 0 0 $v-gap $h-gap
 	
 
 // Subnavigation-style sidebar box
