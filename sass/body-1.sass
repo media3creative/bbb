@@ -27,29 +27,28 @@
 				a.container
 					@extend .container-setup
 					margin: 0px ($h-gap - 1) 0 0
-					//background: $accent-color url("/images/home_left.jpg") no-repeat
+					background: $option-bg url(/images/home_left.png) no-repeat
 			.middle
 				a.container
 					@extend .container-setup
 					margin: 0px ($h-gap - 1) 0 0
-					//background: $accent-color url("/images/home_center.jpg") no-repeat
+					background: $option-bg url(/images/home_center.png) no-repeat
 			.right
 				a.container
 					@extend .container-setup
 					margin: 0
-					//background: $accent-color url("/images/home_right.jpg") no-repeat
+					background: $option-bg url('/images/home_right.png') no-repeat
 
 
 .container-setup
 	@extend .box
 	@extend .corner-all
-	@extend .font-helvetica
 	@extend .clearfix
 	position: relative
 	+float-left
 	width: (($inside-width - ($h-gap * 2)) / 3)
 	height: $option-height
-	background: $option-bg
+	//background: $option-bg
 	border: 1px solid $option-border
 	z-index: 20
 	h1
@@ -66,7 +65,7 @@
 		letter-spacing: .05em
 	h3
 		@extend .box
-		@extend .font-base
+		font-family: "EmbedFont-1"
 		position: absolute
 		top: 75px
 		left: ($h-gap * 0.75)
@@ -78,10 +77,10 @@
 	p.link
 		@extend .box
 		@extend .corner-all
-		@extend .font-base
+		font-family: "EmbedFont-1"
 		position: absolute
 		bottom: ($v-gap * 0.5)
-		left: ($h-gap * 0.75)
+		right: ($h-gap * 0.75)
 		display: inline
 		color: $option-link
 		font-size: 11px

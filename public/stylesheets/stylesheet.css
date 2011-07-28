@@ -38,7 +38,7 @@ table {
   border-spacing: 0;
 }
 
-.font-helvetica, body, .m3c-bar {
+.font-helvetica, .m3c-bar {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -54,8 +54,12 @@ table {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
+}
+
+.font-base {
+  font-face: "EmbedFont-1";
 }
 
 .bg-gradient-primary {
@@ -82,9 +86,9 @@ table {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0070aa), to(#005f90));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #0070aa, #005f90);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -238,7 +242,7 @@ select, input, textarea {
   font-size: 14px;
 }
 
-.font-helvetica, body, .m3c-bar {
+.font-helvetica, .m3c-bar {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -254,8 +258,12 @@ select, input, textarea {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
+}
+
+.font-base {
+  font-face: "EmbedFont-1";
 }
 
 .bg-gradient-primary {
@@ -282,9 +290,9 @@ select, input, textarea {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0070aa), to(#005f90));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #0070aa, #005f90);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -441,7 +449,7 @@ b {
   font-weight: bold;
 }
 
-.font-helvetica, body, .m3c-bar {
+.font-helvetica, .m3c-bar {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -457,8 +465,12 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
+}
+
+.font-base {
+  font-face: "EmbedFont-1";
 }
 
 .bg-gradient-primary {
@@ -485,9 +497,9 @@ b {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0070aa), to(#005f90));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #0070aa, #005f90);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -1268,6 +1280,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 body {
+  font-family: "EmbedFont-1";
   background: white;
   padding-top: 40px;
 }
@@ -1312,9 +1325,9 @@ p:last-child {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0070aa), to(#005f90));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #0070aa, #005f90);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -1337,14 +1350,14 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 20px;
   overflow: hidden;
   *zoom: 1;
-  color: #efefef;
-  background: #d8a41c;
+  color: #aaaaaa;
+  background: #dadada;
   font-size: 9px;
   font-weight: 200;
   text-transform: uppercase;
   line-height: 1.4em;
   letter-spacing: 1px;
-  border-top: 1px solid #c19319;
+  border-top: 1px solid #cccccc;
   z-index: 100;
 }
 .m3c-bar .copyright {
@@ -1365,7 +1378,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .m3c-bar a:hover {
   color: white;
-  border-bottom: 0px solid #dddddd;
+  border-bottom: 0px solid #dadada;
   text-decoration: none;
 }
 
@@ -1427,13 +1440,13 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 html {
   margin: 0;
   padding: 0;
-  background: #efefef;
+  background: white;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: #efefef;
+  background: white;
 }
 
 .content {

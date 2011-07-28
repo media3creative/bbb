@@ -20,49 +20,42 @@
 		h1
 			@extend .box
 			font-family: "EmbedFont-1"
-			width: $inside-width
-			margin: 15px 0 0 0
-			padding: 0 ($h-gap) 0.2em 300px
-			color: $image-slider-title
-			//background: $primary
-			//opacity: 0.85
-			font-size: 30px
-			font-weight: 100
-			text-align: right
-			line-height: 1em
+			width: $inside-width	
+			margin: 110px auto 0
+			padding: 6px 0 4px 0
+			color: #fff
+			background: $primary
+			opacity: 0.85
+			font-size: 36px
+			font-weight: bold
+			text-align: center
 			word-spacing: .1em
 			letter-spacing: .05em
-			//border-bottom: 4px solid #fff
-			&:hover
-				//opacity: 0.75
+			border-bottom: 4px solid #fff
 		h3
 			@extend .font-base
-			//@extend .corner-right
+			@extend .corner-right
 			@extend .box
 			position: relative
 			top: 0px
-			width: $inside-width
-			margin: 0 0 6px 0
-			padding: 0.4em ($h-gap) 0.4em 450px
-			color: $gray-med
-			//background: $secondary
-			//opacity: 0.85
+			left: 0
+			width: 380px
+			margin: 5px 0 6px 0
+			padding: .4em 20px .4em 90px
+			color: #fff
+			background: $secondary
+			opacity: 0.85
 			font-size: 14px
 			font-weight: 200
-			text-align: right
 			line-height: 1.1em
-			//word-spacing: .05em
-			//letter-spacing: .025em
-			//border: 1px solid #000
-			&:hover
-				//opacity: 0.75
 		p.link
 			@extend .bg-gradient-primary
 			@extend .box
 			@extend .corner-all
 			position: absolute
 			bottom: ($v-gap/2)
-			left: $h-gap
+			right: $h-gap
+			padding: 5px 5px 7px 5px
 			color: $image-slider-link	
 			border: 1px solid $primary
 			&:hover
@@ -134,7 +127,7 @@
 	z-index: 8
 
 .nivo-caption p 
-	padding: 5px
+	padding: 0
 	margin: 0
 
 .nivo-caption a 
