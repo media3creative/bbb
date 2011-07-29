@@ -2,10 +2,10 @@
 
 // MAIN NAVIGATION
 - @link1 = ["Home", "/home"]
-- @link2 = ["About", "/page2"]
-- @link3 = ["Services", "/page3"]
-- @link4 = ["Gallery", "/gallery"]
-- @link5 = ["Contact", "/page5"]
+- @link2 = ["About", "/about"]
+- @link3 = ["Products", "/products"]
+- @link4 = ["Services", "/services"]
+- @link5 = ["Contact", "/contact"]
 
 // FOOTER LINKS
 - @linkA1 = ["link name", "/path"]
@@ -20,9 +20,10 @@
 - @linkB4 = ["link name", "/path"]
 - @linkB5 = ["link name", "/path"]
 
-- @linkC1 = ["link name", "/path"]
-- @linkC2 = ["link name", "/path"]
-- @linkC3 = ["link name", "/path"]
+- @linkC0 = ["Connect", "#"]
+- @linkC1 = ["Facebook", "http://www.facebook.com/name"]
+- @linkC2 = ["Twitter", "http://www.twitter.com/name"]
+- @linkC3 = @link5
 - @linkC4 = ["link name", "/path"]
 - @linkC5 = ["link name", "/path"]
 
@@ -232,15 +233,15 @@
             %a{:href => @linkB4[1]}
               =@linkB4[0]
           .column
-            %h4 Group Three
+            %h4=@linkC0[0]
             %a{:href => @linkC1[1]}
               =@linkC1[0]
             %a{:href => @linkC2[1]}
               =@linkC2[0]
             %a{:href => @linkC3[1]}
               =@linkC3[0]
-            %a{:href => @linkC4[1]}
-              =@linkC4[0]  
+            / %a{:href => @linkC4[1]}
+            /   =@linkC4[0]  
               
                   
     .m3c-bar

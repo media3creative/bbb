@@ -1,0 +1,87 @@
+- @title = " | Products"
+- @subtitle = ""
+- @body_class = "three"
+
+- @sub0 = ["Product", "/products"]
+- @sub1 = ["Our Products", "#products"]
+- @sub2 = ["Dresser Roots", "#roots"]
+- @sub3 = ["FPZ", "fpz"]
+
+%link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+
+
+#three.image-slider
+  .center
+    #slider-wrapper
+      #slider.nivoSlider
+        %img{:alt => "", :src => "/images/nivo/banner-3-1.jpg", :title => "#caption1"}/
+      #caption1.nivo-html-caption
+        %h1
+          The LARGEST distributor of 
+          %br
+          Roots Blowers in the US
+        %h3 No other supplier has a larger inventory of Dresser Roots blowers, blower parts, and accessories.
+        %p.slider-link
+          = link_to "Shop Now", "http://www.shopify.com/acfm/roots"
+
+
+.body
+  .center
+    .content
+      #two.sidebar.right
+        / .subnav
+        /   %h1=@sub0[0]
+        /   .link
+        /     %h5 
+        /     %p
+        /       %a{:href => "#"+@sub1[1]}
+        /         =@sub1[0]
+        /   .link
+        /     %h5 
+        /     %p
+        /       %a{:href => "#"+@sub2[1]}
+        /         =@sub2[0]
+        /   .link
+        /     %h5 
+        /     %p
+        /       %a{:href => "#"+@sub3[1]}
+        /         =@sub3[0]
+        .text
+          %h1 The Dresser Roots Blower
+          %p Pioneered in 1854, the Roots blowers have stood the test of time and are known for their lasting endurance and stability
+        / .button
+        /   %h1 Button Sidebar
+        /   %h3 Subtitle Text
+        /   %p.link
+        /     %a{:href => "/path"} Link Text
+        / .form
+        /   %h1 Form Sidebar
+        /   .contact-form
+        /     %iframe.contact{:allowtransparency => "true", :frameborder => "0", :height => "365", :scrolling => "no", :src => "http://media3creative.wufoo.com/embed/q7p6z1/", :border => "none"}
+      
+
+      #two.main
+        .content
+          %a{:name => @sub1[1]}
+          .section.no-image
+            %h1=@sub1[0]
+            %p ACFM specializes in supplying and installing Roots blowers and equipment to industries and businesses all over the world.
+            %p At ACFM, we choose Roots blowers because of their quality craftsmanship, reliability and dependability. Roots pioneered the first blower in 1854, and their products have stood the test of time and are known for their lasting endurance and stability.
+            %p We pride ourselves on being the largest Roots distributor in the United States. No other supplier has a larger inventory of Roots blowers, blower parts, and accessories than ACFM.
+        
+          %a{:name => @sub2[1]}
+          .section.no-image
+            %h1=@sub2[0]
+            %p ACFM Inc. is a factory-authorized distributor and service provider of Roots blowers and Roots equipment, and has over 60 years of combined experience in the application of blower systems.
+            %p We carry a full line of Roots products, including: Positive Displacement Blowers - Positive Displacement Vacuum Pumps - Centrifugal Blowers
+            %p
+              %a{:href => "http://www.shopify.com/acfm/roots"} Shop Roots Products > >
+                  
+          %a{:name => @sub3[1]}
+          .section.no-image
+            %h1=@sub3[0]
+            %p FPZ is a worldwide manufacturer and supplier of regenerative blowers and accessories. We are proud to offer FPZ Regenerative Blowers to meet your needs.
+            %p
+              %a{:href => "http://www.shopify.com/acfm/fpz"} Shop FPZ Products > >
+
+          .spacer

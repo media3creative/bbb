@@ -147,7 +147,7 @@
 		width: ($option-width - ($h-gap *2))
 		margin: 0 auto ($v-gap / 2)
 		padding: 0
-		color: $section-text
+		color: $option-text
 		font-size: 12px
 		font-weight: 200
 		text-align: justify
@@ -203,7 +203,7 @@
 			@extend .clearfix
 			position: relative
 			padding: 0 0 ($v-gap) 0
-			border-bottom: 1px dotted $section-border
+			//border-bottom: 1px dotted $section-border
 			&:last-child
 				padding-bottom: 0
 				border-bottom: none
@@ -224,9 +224,9 @@
 				margin: $corner-radius 0 ($v-gap/3) ($content-img-w + ($h-gap / 2))
 				padding: 0 3em 0.5em $corner-radius
 				color: $section-title !important
-				font-size: 18px
+				font-size: 24px
 				font-weight: 100
-				text-transform: uppercase
+				text-transform: none
 				word-spacing: .1em
 				letter-spacing: .05em
 				border-bottom: 1px solid $section-lines
@@ -235,7 +235,7 @@
 				@extend .box
 				width: ($content-width)
 				margin: $corner-radius 0 ($v-gap/3) 0
-				padding: 0 0 0 $corner-radius
+				padding: 0 0 0 $h-gap
 				color: $section-text
 				font-size: 12px
 				font-weight: 200

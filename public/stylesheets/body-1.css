@@ -28,9 +28,9 @@
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #006bc7, #003461);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#004f94, endColorstr=#003461);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#004f94, endColorstr=#003461)";
 }
 
 .bg-gradient-reverse {
@@ -39,9 +39,9 @@
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #003461, #006bc7);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#003461, endColorstr=#004f94);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#003461, endColorstr=#004f94)";
 }
 
 .bg-gradient-secondary {
@@ -50,9 +50,20 @@
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #0070aa, #005f90);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0081c2, endColorstr=#005f90);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#0081c2, endColorstr=#005f90)";
+}
+
+.bg-gradient-gray-accent {
+  /* For WebKit (Safari, Google Chrome etc) */
+  background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(white));
+  /* For Mozilla/Gecko (Firefox etc) */
+  background: -moz-linear-gradient(top, #efefef, white);
+  /* For Internet Explorer 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#ffffff);
+  /* For Internet Explorer 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#ffffff)";
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
@@ -235,9 +246,9 @@ b {
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #006bc7, #003461);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#004f94, endColorstr=#003461);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#004f94, endColorstr=#003461)";
 }
 
 .bg-gradient-reverse {
@@ -246,9 +257,9 @@ b {
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #003461, #006bc7);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#003461, endColorstr=#004f94);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#003461, endColorstr=#004f94)";
 }
 
 .bg-gradient-secondary {
@@ -257,9 +268,20 @@ b {
   /* For Mozilla/Gecko (Firefox etc) */
   background: -moz-linear-gradient(top, #0070aa, #005f90);
   /* For Internet Explorer 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0081c2, endColorstr=#005f90);
   /* For Internet Explorer 8 */
-  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#0081c2, endColorstr=#005f90)";
+}
+
+.bg-gradient-gray-accent {
+  /* For WebKit (Safari, Google Chrome etc) */
+  background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(white));
+  /* For Mozilla/Gecko (Firefox etc) */
+  background: -moz-linear-gradient(top, #efefef, white);
+  /* For Internet Explorer 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#ffffff);
+  /* For Internet Explorer 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#ffffff)";
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, b::selection, a::selection {
@@ -394,9 +416,9 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1 {
   font-family: "EmbedFont-1";
   position: absolute;
-  top: 22.5px;
-  left: 22.5px;
-  margin: 0 22.5px 0 0;
+  top: 20.1px;
+  left: 20.1px;
+  margin: 0 20.1px 0 0;
   color: #003461;
   font-size: 24px;
   font-weight: 100;
@@ -407,7 +429,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   font-family: "EmbedFont-1";
   position: absolute;
   top: 75px;
-  left: 22.5px;
+  left: 20.1px;
   margin: 0 76px 12px 0;
   color: #005f90;
   font-size: 12px;
@@ -418,7 +440,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   font-family: "EmbedFont-1";
   position: absolute;
   bottom: 15px;
-  right: 22.5px;
+  right: 20.1px;
   display: inline;
   color: #005f90;
   font-size: 11px;

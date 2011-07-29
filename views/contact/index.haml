@@ -17,16 +17,27 @@
     .content
       #five.sidebar.left
         .text
-          %h1 Text Sidebar
-          %h3 Subtitle Text
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          %p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-      
+          %h1 Contact Us
+          %p 
+            %sub PHONE
+            %br
+            (111) 111-1111
+          %p  
+            %sub EMAIL
+            %br
+            name@domain.com
+          %p
+            %sub ADDRESS
+            %br
+            12345 Street St.
+            %br
+            Houston, TX 77000
+          
 
       #five.main
         .content
           %a{:name => "anchor1"}
           .section.no-image
-            %h1 Section with Form
+            %h1 We Want to Hear from YOU
             %p.contact-form
               %iframe.contact{:allowtransparency => "true", :frameborder => "0", :height => "365", :scrolling => "no", :src => "http://media3creative.wufoo.com/embed/q7p6z1/", :width => "100%", :border => "none"}       

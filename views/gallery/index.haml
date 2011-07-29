@@ -2,14 +2,11 @@
 - @subtitle = ""
 - @body_class = "four"
 
+- @sub0 = ["Gallery", "/gallery"]
+- @sub1 = ["Gallery", "#gallery"]
+
 %link{:href => "stylesheets/body-3.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
 %script{:charset => "utf-8", :src => "javascripts/jquery.prettyPhoto.js", :type => "text/javascript"}
-
-
-#two.banner
-  .center
-    .content
-      %img.banner{:alt => "", :src => "/images/gallery/banner-4.jpg"}
 
 
 
@@ -18,9 +15,9 @@
     .content
       #four.main
         .content
-          %a{:name => "anchor1"}
+          %a{:name => @sub1[1]}
           .section.no-image
-            %h1 Section without Image
+            %h1=@sub1[0]
             %ul.gallery.clearfix
               %li
                 %a{:href => "images/gallery/fullscreen/1.jpg", :rel => "prettyPhoto[gallery2]", :title => "Caption"}
