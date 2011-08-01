@@ -19,14 +19,14 @@
 }
 
 .font-base {
-  font-face: "EmbedFont-1";
+  font-face: "EmbedFont-2";
 }
 
-.bg-gradient-primary, #header, .center {
+.bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#fde9ec), to(#f48c9c));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #fde9ec, #f48c9c);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#004f94, endColorstr=#003461);
   /* For Internet Explorer 8 */
@@ -35,9 +35,9 @@
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f48c9c), to(#fde9ec));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #f48c9c, #fde9ec);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#003461, endColorstr=#004f94);
   /* For Internet Explorer 8 */
@@ -46,9 +46,9 @@
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#0070aa), to(#005f90));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d0d0d), to(black));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #0070aa, #005f90);
+  background: -moz-linear-gradient(top, #0d0d0d, black);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0081c2, endColorstr=#005f90);
   /* For Internet Explorer 8 */
@@ -237,14 +237,14 @@ b {
 }
 
 .font-base {
-  font-face: "EmbedFont-1";
+  font-face: "EmbedFont-2";
 }
 
-.bg-gradient-primary, #header, .center {
+.bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#fde9ec), to(#f48c9c));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #fde9ec, #f48c9c);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#004f94, endColorstr=#003461);
   /* For Internet Explorer 8 */
@@ -253,9 +253,9 @@ b {
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f48c9c), to(#fde9ec));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #f48c9c, #fde9ec);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#003461, endColorstr=#004f94);
   /* For Internet Explorer 8 */
@@ -264,9 +264,9 @@ b {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#0070aa), to(#005f90));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d0d0d), to(black));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #0070aa, #005f90);
+  background: -moz-linear-gradient(top, #0d0d0d, black);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0081c2, endColorstr=#005f90);
   /* For Internet Explorer 8 */
@@ -382,7 +382,6 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 80px;
   margin: 0;
   padding: 0;
-  border-bottom: 2px solid #777777;
 }
 
 .center #logo1 {
@@ -406,12 +405,12 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 ul#topnav {
-  font-family: "EmbedFont-1";
+  font-family: "EmbedFont-2";
   display: inline;
-  float: left;
+  float: right;
   margin: 20px 30px 0 165px;
   padding: 0;
-  color: #aaaaaa;
+  color: black;
   font-size: 11px;
   letter-spacing: 0.05em;
   list-style: none;
@@ -433,17 +432,18 @@ ul#topnav li a {
 }
 
 ul#topnav a.topnav {
-  margin: 6px -1px 0 0;
-  padding: 0.5em 2em 0.4em 2em;
+  margin: 6px 1.5em 0;
+  padding: 4px 7px;
   font-size: 13px;
   text-align: center;
   text-transform: uppercase;
-  border-left: 1px solid #005f90;
-  border-right: 1px solid #005f90;
+  background: transparent;
+  border-bottom: 3px solid transparent;
 }
 
 ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover {
-  color: white;
+  color: black;
+  border-bottom: 3px solid #f48c9c;
 }
 
 ul#topnav li .sub {
@@ -453,9 +453,9 @@ ul#topnav li .sub {
   float: left;
   top: 2.7em;
   left: 1px;
-  background: #002648;
+  background: #f27588;
   padding: 5px 0 6px 0;
-  border-top: 2px solid #005f90;
+  border-top: 2px solid black;
   z-index: 50;
 }
 
@@ -492,14 +492,14 @@ ul#topnav .sub ul li a {
   margin: 0;
   padding: 0.5em 1em;
   color: #777777;
-  background: #002648;
+  background: #f27588;
   text-indent: 0;
   text-decoration: none;
 }
 
 ul#topnav .sub ul li a:hover {
   color: white;
-  background: #006bc7;
+  background: #fde9ec;
 }
 
 ul#topnav .sub ul li h2 {
@@ -510,5 +510,5 @@ ul#topnav .sub ul li h2 {
 }
 
 .navigation-hover, body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three {
-  color: white;
+  border-bottom: 3px solid #f48c9c;
 }

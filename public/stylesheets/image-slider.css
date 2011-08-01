@@ -19,14 +19,14 @@
 }
 
 .font-base, .image-slider .center h3 {
-  font-face: "EmbedFont-1";
+  font-face: "EmbedFont-2";
 }
 
 .bg-gradient-primary, .image-slider .center p.slider-link {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#fde9ec), to(#f48c9c));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #fde9ec, #f48c9c);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#004f94, endColorstr=#003461);
   /* For Internet Explorer 8 */
@@ -35,9 +35,9 @@
 
 .bg-gradient-reverse, .image-slider .center p.slider-link:hover {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f48c9c), to(#fde9ec));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #f48c9c, #fde9ec);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#003461, endColorstr=#004f94);
   /* For Internet Explorer 8 */
@@ -46,9 +46,9 @@
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#0070aa), to(#005f90));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d0d0d), to(black));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #0070aa, #005f90);
+  background: -moz-linear-gradient(top, #0d0d0d, black);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0081c2, endColorstr=#005f90);
   /* For Internet Explorer 8 */
@@ -237,14 +237,14 @@ b {
 }
 
 .font-base, .image-slider .center h3 {
-  font-face: "EmbedFont-1";
+  font-face: "EmbedFont-2";
 }
 
 .bg-gradient-primary, .image-slider .center p.slider-link {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#fde9ec), to(#f48c9c));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #fde9ec, #f48c9c);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#004f94, endColorstr=#003461);
   /* For Internet Explorer 8 */
@@ -253,9 +253,9 @@ b {
 
 .bg-gradient-reverse, .image-slider .center p.slider-link:hover {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f48c9c), to(#fde9ec));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #f48c9c, #fde9ec);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#003461, endColorstr=#004f94);
   /* For Internet Explorer 8 */
@@ -264,9 +264,9 @@ b {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#0070aa), to(#005f90));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d0d0d), to(black));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #0070aa, #005f90);
+  background: -moz-linear-gradient(top, #0d0d0d, black);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0081c2, endColorstr=#005f90);
   /* For Internet Explorer 8 */
@@ -386,12 +386,12 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding: 30px 0 15px;
 }
 .image-slider .center h1 {
-  font-family: "EmbedFont-1";
+  font-family: "EmbedFont-2";
   width: 900px;
   margin: 110px auto 0;
   padding: 6px 0 4px 0;
   color: white;
-  background: #003461;
+  background: #f48c9c;
   opacity: 0.85;
   font-size: 36px;
   font-weight: bold;
@@ -408,8 +408,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   width: 380px;
   margin: 5px 0 6px 0;
   padding: 0.4em 20px 0.4em 90px;
-  color: white;
-  background: #005f90;
+  color: #f27588;
+  background: #fde9ec;
   opacity: 0.85;
   font-size: 14px;
   font-weight: 200;
@@ -421,10 +421,10 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   right: 30px;
   padding: 5px 5px 7px 5px;
   color: white;
-  border: 1px solid #003461;
+  border: 1px solid #f48c9c;
 }
 .image-slider .center p.slider-link a {
-  font-family: "EmbedFont-1";
+  font-family: "EmbedFont-2";
   display: block;
   padding: 9px 2em 8px 2em;
   color: inherit;
@@ -537,7 +537,7 @@ a.nivo-nextNav {
 }
 
 #slider-wrapper {
-  font-family: "EmbedFont-1";
+  font-family: "EmbedFont-2";
   position: relative;
   width: 900px;
   height: 300px;

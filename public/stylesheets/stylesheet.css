@@ -59,14 +59,14 @@ table {
 }
 
 .font-base {
-  font-face: "EmbedFont-1";
+  font-face: "EmbedFont-2";
 }
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#fde9ec), to(#f48c9c));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #fde9ec, #f48c9c);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#004f94, endColorstr=#003461);
   /* For Internet Explorer 8 */
@@ -75,9 +75,9 @@ table {
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f48c9c), to(#fde9ec));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #f48c9c, #fde9ec);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#003461, endColorstr=#004f94);
   /* For Internet Explorer 8 */
@@ -86,9 +86,9 @@ table {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#0070aa), to(#005f90));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d0d0d), to(black));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #0070aa, #005f90);
+  background: -moz-linear-gradient(top, #0d0d0d, black);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0081c2, endColorstr=#005f90);
   /* For Internet Explorer 8 */
@@ -274,14 +274,14 @@ select, input, textarea {
 }
 
 .font-base {
-  font-face: "EmbedFont-1";
+  font-face: "EmbedFont-2";
 }
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#fde9ec), to(#f48c9c));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #fde9ec, #f48c9c);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#004f94, endColorstr=#003461);
   /* For Internet Explorer 8 */
@@ -290,9 +290,9 @@ select, input, textarea {
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f48c9c), to(#fde9ec));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #f48c9c, #fde9ec);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#003461, endColorstr=#004f94);
   /* For Internet Explorer 8 */
@@ -301,9 +301,9 @@ select, input, textarea {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#0070aa), to(#005f90));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d0d0d), to(black));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #0070aa, #005f90);
+  background: -moz-linear-gradient(top, #0d0d0d, black);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0081c2, endColorstr=#005f90);
   /* For Internet Explorer 8 */
@@ -492,14 +492,14 @@ b {
 }
 
 .font-base {
-  font-face: "EmbedFont-1";
+  font-face: "EmbedFont-2";
 }
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#fde9ec), to(#f48c9c));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #fde9ec, #f48c9c);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#004f94, endColorstr=#003461);
   /* For Internet Explorer 8 */
@@ -508,9 +508,9 @@ b {
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f48c9c), to(#fde9ec));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #f48c9c, #fde9ec);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#003461, endColorstr=#004f94);
   /* For Internet Explorer 8 */
@@ -519,9 +519,9 @@ b {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#0070aa), to(#005f90));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d0d0d), to(black));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #0070aa, #005f90);
+  background: -moz-linear-gradient(top, #0d0d0d, black);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0081c2, endColorstr=#005f90);
   /* For Internet Explorer 8 */
@@ -1336,9 +1336,9 @@ p:last-child {
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#fde9ec), to(#f48c9c));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #fde9ec, #f48c9c);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#004f94, endColorstr=#003461);
   /* For Internet Explorer 8 */
@@ -1347,9 +1347,9 @@ p:last-child {
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f48c9c), to(#fde9ec));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #f48c9c, #fde9ec);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#003461, endColorstr=#004f94);
   /* For Internet Explorer 8 */
@@ -1358,9 +1358,9 @@ p:last-child {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#0070aa), to(#005f90));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d0d0d), to(black));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #0070aa, #005f90);
+  background: -moz-linear-gradient(top, #0d0d0d, black);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0081c2, endColorstr=#005f90);
   /* For Internet Explorer 8 */
@@ -1394,8 +1394,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 20px;
   overflow: hidden;
   *zoom: 1;
-  color: #aaaaaa;
-  background: #dadada;
+  color: #fde9ec;
+  background: #f48c9c;
   font-size: 9px;
   font-weight: 200;
   text-transform: uppercase;
@@ -1417,7 +1417,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 3px 0 0 0;
 }
 .m3c-bar a {
-  color: #003461;
+  color: black;
   text-decoration: none;
 }
 .m3c-bar a:hover {

@@ -72,7 +72,7 @@
 	h1
 		@extend .box
 		@extend .corner-top
-		font-family: "EmbedFont-1"
+		font-family: "EmbedFont-2"
 		position: relative
 		color: $option-title
 		background: $option-title-bg
@@ -142,7 +142,7 @@
 // Text-style sidebar box
 .text
 	p
-		@extend .font-base
+		font-family: "EmbedFont-2"
 		@extend .box
 		width: ($option-width - ($h-gap *2))
 		margin: 0 auto ($v-gap / 2)
@@ -150,7 +150,7 @@
 		color: $option-text
 		font-size: 12px
 		font-weight: 200
-		text-align: justify
+		text-align: left
 		line-height: 1.7em
 		&:last-child
 			margin-bottom: ($v-gap / 2)
@@ -190,7 +190,7 @@
 .main
 	@extend .section
 	@extend .box
-	font-family: "EmbedFont-1"
+	font-family: "EmbedFont-2"
 	position: relative
 	+float-left
 	width: $content-width
@@ -218,7 +218,7 @@
 				margin: 0 ($h-gap / 2) ($v-gap / 2) 0
 				z-index: 100
 			h1
-				font-family: "EmbedFont-1"
+				font-family: "EmbedFont-2"
 				@extend .box
 				width: ($content-width - ($content-img-w + ($h-gap / 2)))
 				margin: $corner-radius 0 ($v-gap/3) ($content-img-w + ($h-gap / 2))
@@ -230,6 +230,17 @@
 				word-spacing: .1em
 				letter-spacing: .05em
 				border-bottom: 1px solid $section-lines
+			h2
+				@extend .font-base
+				@extend .box
+				width: ($content-width)
+				margin: $corner-radius 0 0 0
+				padding: 0 0 0 $h-gap
+				color: $section-title
+				font-size: 14px
+				font-weight: 200
+				text-align: justify
+				line-height: 1.7em				
 			p
 				@extend .font-base
 				@extend .box
