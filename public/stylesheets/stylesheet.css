@@ -121,6 +121,7 @@ a {
 a:hover {
   color: inherit;
   text-decoration: underline;
+  cursor: pointer;
 }
 a:focus, a:active {
   outline: none;

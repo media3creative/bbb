@@ -18,7 +18,7 @@
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.font-base, .subnav h3, .text h3, .button h3, .form h3, .link, .main .content .section h2, .main .content .main h2, .main .content .section p, .main .content .main p {
+.font-base, .subnav h3, .text h3, .button h3, .form h3, .main .content .section h2, .main .content .main h2, .main .content .section p, .main .content .main p {
   font-face: "EmbedFont-2";
 }
 
@@ -236,7 +236,7 @@ b {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.font-base, .subnav h3, .text h3, .button h3, .form h3, .link, .main .content .section h2, .main .content .main h2, .main .content .section p, .main .content .main p {
+.font-base, .subnav h3, .text h3, .button h3, .form h3, .main .content .section h2, .main .content .main h2, .main .content .section p, .main .content .main p {
   font-face: "EmbedFont-2";
 }
 
@@ -458,6 +458,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 .link {
+  font-family: "EmbedFont-2";
   position: relative;
   width: 220px;
   margin: 0 auto;
@@ -494,7 +495,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .link p a {
   font-size: 12px;
-  color: black;
+  color: #f48c9c;
 }
 .link p a:hover {
   color: black;
@@ -606,11 +607,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin-bottom: 0;
 }
 .main .content .section p a, .main .content .main p a {
-  color: #fde9ec;
+  color: #f48c9c;
   text-decoration: none;
 }
 .main .content .section p a:hover, .main .content .main p a:hover {
-  color: #f48c9c;
+  color: black;
 }
 
 .container-setup, .subnav, .text, .button, .form {
