@@ -1,17 +1,16 @@
-- @sitename = "BBB Formula"
+- @sitename = "Exceptional Events"
 
 // MAIN NAVIGATION
 - @link1 = ["Home", "/home"]
-- @link2 = ["How It Works", "/how"]
-- @link3 = ["Guidelines", "/guide"]
-- @link4 = ["Ingredients", "/ingredients"]
+- @link2 = ["About", "/about"]
+- @link3 = ["Services", "/services"]
+- @link4 = ["Gallery", "/gallery"]
 - @link5 = ["Contact", "/contact"]
-- @link6 = ["FAQ", "/faq"]
 
 // FOOTER LINKS
-- @linkA1 = ["PO BOX 262389 | Houston, TX 77207", "/path"]
-- @linkA2 = ["1-800-679-1437", "/path"]
-- @linkA3 = ["link name", "/path"]
+- @linkA1 = ["5500 E Sam Houston Pkwy N Ste 102 | Houston, TX 77015", "/path"]
+- @linkA2 = ["(713) 530-7265", "/path"]
+- @linkA3 = ["ncliffordbrown@yahoo.com", "mailto:ncliffordbrown@yahoo.com"]
 - @linkA4 = ["link name", "/path"]
 - @linkA5 = ["link name", "/path"]
 
@@ -82,9 +81,9 @@
                   boxCols: 19, // For box animations
                   boxRows: 8, // For box animations
                   animSpeed: 600, // Slide transition speed
-                  pauseTime: 6000, // How long each slide will show
+                  pauseTime: 3000, // How long each slide will show
                   startSlide: 0, // Set starting Slide (0 index)
-                  directionNav: false, // Next & Prev navigation
+                  directionNav: true, // Next & Prev navigation
                   directionNavHide: true, // Only show on hover
                   controlNav: true, // 1,2,3... navigation
                   controlNavThumbs: false, // Use thumbnails for Control Nav
@@ -93,7 +92,7 @@
                   controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
                   keyboardNav: false, // Use left & right arrows
                   pauseOnHover: true, // Stop animation while hovering
-                  manualAdvance: true, // Force manual transitions
+                  manualAdvance: false, // Force manual transitions
                   captionOpacity: 1.0, // Universal caption opacity
                   prevText: 'Back', // Prev directionNav text
                   nextText: 'Next', // Next directionNav text
@@ -182,6 +181,9 @@
             %img{:src => "/images/logo.png", :alt => ""+@sitename+" Logo"}
         %ul#topnav
           %li
+            %a#one.topnav{:href => @link1[1]}
+              =@link1[0]
+          %li
             %a#two.topnav{:href => @link2[1]}
               =@link2[0]
             .sub
@@ -201,9 +203,6 @@
             %a#four.topnav{:href => @link4[1]}
               =@link4[0]
           %li
-            %a#six.topnav{:href => @link6[1]}
-              =@link6[0]
-          %li
             %a#five.topnav{:href => @link5[1]}
               =@link5[0]
 
@@ -218,22 +217,28 @@
               %p.logo-sm
                 %img{:src => "/images/logo-sm.png", :alt => @sitename+" Logo"}
             .row
-              %p BBB should be taken as part of a healthy lifestyle. Results may vary.
+              %p
+                Exceptional Events
+                %br
+                Providing excellence as we cater to our clients
             .row
               %p
-                =@linkA1[0]
-                =" | "
+                / =@linkA1[0]
+                / =" | "
                 =@linkA2[0]
-            .row
-              %p
-                %a{:href => @linkC0[1]+@linkC1[1]} 
-                  =@linkC1[0]              
                 =" | "
-                %a{:href => @linkC0[1]+@linkC2[1]} 
-                  =@linkC2[0]
-                =" | "
-                %a{:href => @linkC0[1]+@linkC3[1]} 
-                  =@linkC3[0]
+                %a{:href=> @linkA3[1]}
+                  =@linkA3[0]
+            / .row
+            /   %p
+            /     %a{:href => @linkC0[1]+@linkC1[1]} 
+            /       =@linkC1[0]              
+            /     =" | "
+            /     %a{:href => @linkC0[1]+@linkC2[1]} 
+            /       =@linkC2[0]
+            /     =" | "
+            /     %a{:href => @linkC0[1]+@linkC3[1]} 
+            /       =@linkC3[0]
             .row
               %p
                 %a{:href => @linkB1[1], :target => "_blank"} 

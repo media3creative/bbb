@@ -1,0 +1,42 @@
+- @title = " | About"
+- @subtitle = ""
+- @body_class = "two"
+
+- @sub0 = ["About", "/about"]
+- @sub1 = ["About Us", "#about"]
+- @sub2 = ["Competitive Positioning", "#position"]
+- @sub3 = ["Company Strengths", "#strength"]
+
+%link{:href => "stylesheets/body-2.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+
+
+#two.banner
+  .center
+    .content
+      %img.banner{:alt => "", :src => "/images/banner-2.jpg"}
+
+
+
+
+.body
+  .center
+    .content
+      #two.sidebar.right
+        .form
+          %h1 Contact Us
+          .contact-form
+            %iframe.contact{:allowtransparency => "true", :frameborder => "0", :height => "450", :width => "100%", :scrolling => "no", :src => "http://media3creative.wufoo.com/embed/s7p1a7/", :border => "none"}    
+      
+
+      #two.main
+        .content
+          %a{:name => @sub1[1]}
+          .section.no-image
+            %h1=@sub1[0]
+            %p Exceptional Events is a premier event planning agency that makes our clients' dreams become a spectacular reality. Our expertly experienced staff has multiple years of experience in providing top-notch service to clients, and we bring beautiful ideas, action and organization to every project we touch. From the beginning seeds of planning to the actual day of your event, we are there with you providing a completely customized experience for your individual needs and desires. Whether it is a special night on the town, a winter white wedding or an executive meeting - we make it happen, and always with an exquisite touch. 
+
+            %p We maintain quality relationships with the finest vendors and venue spaces, both locally and out-of-state, so that we can provide unparalleled service and fair pricing for our clients. From event design and decor to staffing solutions and lighting we are there with you every step of the way.
+            
+
+           
+          .spacer

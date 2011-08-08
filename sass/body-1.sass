@@ -17,7 +17,7 @@
 	.center
 		@extend .center-container
 		@extend .clearfix
-		padding: ($v-gap/2) 0
+		padding: ($v-gap) 0 ($v-gap *3)
 		.content
 			@extent .box
 			width: $inside-width
@@ -27,17 +27,17 @@
 				a.container
 					@extend .container-setup
 					margin: 0px ($h-gap - 1) 0 0
-					background: $option-bg url(/images/home_left.png) no-repeat
+					//background: $option-bg url(/images/home_left.png) no-repeat
 			.middle
 				a.container
 					@extend .container-setup
 					margin: 0px ($h-gap - 1) 0 0
-					background: $option-bg url(/images/home_center.png) no-repeat
+					//background: $option-bg url(/images/home_center.png) no-repeat
 			.right
 				a.container
 					@extend .container-setup
 					margin: 0
-					background: $option-bg url('/images/home_right.png') no-repeat
+					//background: $option-bg url('/images/home_right.png') no-repeat
 
 
 .container-setup
@@ -49,27 +49,26 @@
 	width: (($inside-width - ($h-gap * 2)) / 3)
 	height: $option-height
 	//background: $option-bg
-	border: 1px solid $option-border
+	border-left: 4px solid $option-border
 	z-index: 20
 	h1
 		@extend .box
 		font-family: "EmbedFont-2"
 		position: absolute
-		top: ($v-gap * 0.67)
+		top: 0
 		left: ($h-gap * 0.67)
 		margin: 0 ($h-gap * 0.67) 0 0
 		color: $option-title
 		font-size: 24px
 		font-weight: 100
-		word-spacing: .1em
-		letter-spacing: .05em
+
 	h3
 		@extend .box
 		font-family: "EmbedFont-2"
 		position: absolute
-		top: 75px
+		top: 35px
 		left: ($h-gap * 0.67)
-		margin: 0 76px 12px 0
+		margin: 0 26px 12px 0
 		color: $option-text
 		font-size: 12px
 		font-weight: 200
@@ -79,8 +78,8 @@
 		@extend .corner-all
 		font-family: "EmbedFont-2"
 		position: absolute
-		bottom: ($v-gap * 0.5)
-		right: ($h-gap * 0.67)
+		bottom: 0px
+		left: ($h-gap * 0.67)
 		display: inline
 		color: $option-link
 		font-size: 11px
