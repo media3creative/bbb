@@ -192,7 +192,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   box-sizing: border-box;
 }
 
-.opaque, .container-setup:hover, .body .center .content .left a.container:hover, .body .center .content .middle a.container:hover, .body .center .content .right a.container:hover {
+.opaque {
   opacity: 0.75;
   filter: alpha(opacity=75);
 }
@@ -445,4 +445,5 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .container-setup:hover, .body .center .content .left a.container:hover, .body .center .content .middle a.container:hover, .body .center .content .right a.container:hover {
   text-decoration: none;
+  background: #efefef;
 }
